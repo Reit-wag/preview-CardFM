@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+
+    font-family: "Fraunces";
+    src: url(../fonts/Fraunces/static/Fraunces_72pt/Fraunces_72pt-Regular.ttf);
+}
+
+/* GENERAL */
+
+body{
+    background-color: #F3EAE3;
+    margin: 0;
+}
+
+
+.card-container{
+    background-color: #FFFFFF;
+    width: 50%;
+    margin-top: 50vh;
+    margin-left: auto;
+    border-radius: 20px;
+    display: flex;     
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.card-img-container{
+    width: 50%;
+}
+
+.card-img-container img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vh 0;
+    
+}
+
+.card-content h2{
+    color: #A0A0A8;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    margin: 0;
+    width: 70%;
+}
+
+.card-content h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    width: 70%;
+    padding: 2.5vh 0;
+}
+
+.card-content>p{
+    color: #A0A0A8;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+    width: 70%;
+    padding-bottom: 1vh;
+}
+
+.price-container{
+    width: 80%;
+    padding: 3vh 0;
+}
+
+
+.price-container p{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.price-container .green-price{
+    font-family: "Fraunces";
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3A8368;
+    padding: 5%;
+}
+
+.price-container .through-price{
+    color: #A0A0A8;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: line-through;
+    
+}
+
+.btn{
+    background-color: #3A8368;
+    padding: 2vh 2vw;
+    width: 60%;
+    margin: 0 4rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}

@@ -13,15 +13,22 @@ body{
     margin: 0;
 }
 
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARD */
 
 .card-container{
     background-color: #FFFFFF;
-    width: 50%;
-    margin-top: 50vh;
-    margin-left: auto;
+    width: 55vw;
+    height: 55vh;
     border-radius: 20px;
     display: flex;     
-    transform: translate(-50%, -50%);
     overflow: hidden;
 }
 
@@ -36,12 +43,11 @@ body{
 
 .card-content{
     width: 50%;
-    position: relative;
+    padding: 4vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4vh 0;
-    
+    justify-content: space-around;    
 }
 
 .card-content h2{
@@ -50,15 +56,15 @@ body{
     font-weight: 500;
     letter-spacing: 0.4rem;
     text-transform: uppercase;
-    margin: 0;
     width: 70%;
+    margin: 0;
 }
 
 .card-content h1{
     font-size: 4rem;
     font-weight: bold;
-    margin: 0;
     width: 70%;
+    margin: 0;
     padding: 2.5vh 0;
 }
 
@@ -66,29 +72,29 @@ body{
     color: #A0A0A8;
     font-size: 1.8rem;
     font-weight: 500;
-    margin: 0;
     width: 70%;
+    margin: 0;
     padding-bottom: 1vh;
 }
 
 .price-container{
     width: 80%;
-    padding: 3vh 0;
+    padding-bottom: 2vh;
 }
 
 
 .price-container p{
     width: 100%;
+    margin: 0;
     display: flex;
     align-items: center;
-    margin: 0;
 }
 
 .price-container .green-price{
+    color: #3A8368;
     font-family: "Fraunces";
     font-size: 3rem;
     font-weight: 700;
-    color: #3A8368;
     padding: 5%;
 }
 
@@ -96,21 +102,24 @@ body{
     color: #A0A0A8;
     font-size: 1.5rem;
     font-weight: 500;
-    text-decoration: line-through;
-    
+    text-decoration: line-through;    
 }
 
 .btn{
+    color: white;
     background-color: #3A8368;
-    padding: 2vh 2vw;
+    font-family: "Fraunces";
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 10px;
     width: 60%;
     margin: 0 4rem;
-    display: inline-block;
+    padding: 2vh 2vw;
     text-align: center;
-    text-decoration: none;
-    color: white;
-    font-family: "Fraunces";
-    font-weight: 700;
-    font-size: 1.5rem;
-    border-radius: 10px;
+    display: inline-block;
+}
+
+.attribution{
+    margin-top: 2rem;
 }
